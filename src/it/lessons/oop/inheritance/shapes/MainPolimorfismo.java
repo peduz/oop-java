@@ -52,7 +52,21 @@ public class MainPolimorfismo {
 			}
 			default: {
 				System.out.println("Non hai scelto correttamente");
-				forma = new FormaGeometrica();
+//				forma = new FormaGeometrica();
+				forma = new FormaGeometrica() {
+					
+					@Override
+					protected void calcolaPerimetro() {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					protected void calcolaArea() {
+						// TODO Auto-generated method stub
+						
+					}
+				};
 			}
 		}
 		

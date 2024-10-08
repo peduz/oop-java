@@ -1,6 +1,6 @@
 package it.lessons.oop.inheritance.shapes;
 
-public class FormaGeometrica {
+public abstract class FormaGeometrica {
 	
 	protected double perimetro;
 	
@@ -22,7 +22,7 @@ public class FormaGeometrica {
 		return this.nomeFigura;
 	}
 	
-	protected void calcolaPerimetro() { }
-	protected void calcolaArea() { }
+	protected abstract void calcolaPerimetro();
+	protected abstract void calcolaArea();
 	
 }
